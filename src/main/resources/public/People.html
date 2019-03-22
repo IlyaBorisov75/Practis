@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body ng-app="Spring" ng-controller="myCtrl">
+	<div class="container">
+			<div class="row">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Заголовок
+					</div>
+					<div class="panel-body">
+						<table class="table table-striped">
+							<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>RoomNumber</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr ng-repeat="item in peoples">
+								<td>{{item.id}}</td>
+								<td>{{item.name}}</td>
+								<td>{{item.roomNumber}}</td>
+							</tr>
+							</tbody>
+						</table>
+						</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript"  src="js/main.js"></script>
+	</body>
+</html>
